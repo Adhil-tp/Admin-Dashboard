@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Norse;
+    src: url(Sign-up-form/Norse-Bold.otf) format('opentype');
+}
+body{
+    margin: 0;
+}
+
+img{
+    height: 25px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto;
+}
+.sidebar{
+    background-color: rgb(173, 173, 255);
+    grid-row: 1 / -1;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.page-menu{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding:10px 30px;
+    grid-column: span 6;
+    grid-row: 1 / 2;
+}
+.first-header{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-head-1{
+    display: flex;
+    align-items: center;
+}
+.sub-head-2{
+    display: flex;
+    align-items: center;
+}
+.second-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-sub-header1{
+    display: flex;
+    justify-content: center;
+}
+.second-header{
+    display: flex;
+    justify-content: space-between;
+}
+.second-header p , .second-header h2{
+    padding: 0;
+    margin: 0;
+}
+.second-header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 60px;
+    margin-right: 10px;
+}
+.cards{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
+    gap: 15px;
+    grid-row: 2 / 8;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 0 35px;
+    height: 200px;
+}
+.card-icons{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.card h1{
+    margin: 0;
+}
+.content{
+    grid-column: 2 / 3;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+}
+.sidebar h1, .sidebar p , .card h1, .right-side-bar h2 , .header h1 , .header h2 , .content h1{
+    font-family: Norse , sans-serif;
+}
+
+.second-sub-header2{
+    display: flex;
+    gap: 15px;
+}
+.second-sub-header2 p{
+    width: 70px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(173, 173, 255) ;
+}
+.sub-head-2, .sub-head-1{
+    display: flex;
+    gap: 20px;
+}
+
+.sub-head-1 input{
+    border: 1px solid rgb(173, 173, 255);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 300px;
+    height: 30px;
+    color: rgb(173, 173, 255);
+}
+
+.sub-head-1 input:focus{
+    padding: 0 10px;
+    border: 1px solid rgb(147, 255, 147);
+}
+.sub-head-1 input::placeholder{
+    color: rgb(173, 173, 255);
+}
+.logo-image{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header-img img{
+    mix-blend-mode: multiply;
+}
+.right-side-bar{
+    grid-row: 2 / -1; /* Updated grid-row property to extend from the top to the bottom */
+    grid-column: 3 / 4;
+    padding: 20px;
+}
+.right-side-card{ /* Adjust the grid column to position it to the right of the content */
+    background-color: lightgray; /* Adjust the background color as needed */
+    padding: 10px;
+}
+.side-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+}
+.side-card h1{
+    margin:0;
+}
+.side-card{
+    font-size: 10px;
+    background-color: white; /* Adjust the background color as needed */
+    border-radius: 15px;
+    border: 1px rgb(173, 173, 255) solid;
+    padding: 15px; /* Adjust padding as needed */
+    margin-bottom: 5px;
+    height: 100px; 
+    padding: 10px;
+    width: 200px;
+}
